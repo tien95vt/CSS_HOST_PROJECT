@@ -1,0 +1,59 @@
+.testimonial {
+  font-size: 1.2rem;
+  margin: 3rem 0;
+}
+.testimonial:first-of-type {
+  margin-top: 6rem;
+}
+.testimonial .testimonial__image-container {
+  width: 65%;
+  max-width: 580px;
+  display: inline-block;
+  vertical-align: middle;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.testimonial .testimonial__image-container .testimonial__image {
+  width: 100%;
+  height: 450px;
+  vertical-align: top;
+}
+.testimonial .testimonial__info {
+  text-align: right;
+  padding: 0.9rem;
+  display: inline-block;
+  vertical-align: middle;
+  width: 30%;
+}
+.testimonial .testimonial__info .testimonial__name {
+  margin: 0.2rem;
+  color: #ff5454;
+  font-size: 2rem;
+}
+.testimonial .testimonial__info .testimonial__subtitle {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #ccc;
+}
+.testimonial .testimonial__info .testimonial__subtitle a {
+  color: inherit;
+  text-decoration: none;
+}
+.testimonial .testimonial__info .testimonial__subtitle a:hover, .testimonial .testimonial__info .testimonial__subtitle a:active {
+  color: #7a7a7a;
+}
+.testimonial .testimonial__info .testimonial__text {
+  margin: 0.2rem;
+}
+.testimonial#customer-2 {
+  text-align: right;
+}
+.testimonial#customer-2 .testimonial__info {
+  text-align: left;
+}
+
+.testimonial__list {
+  width: 80%;
+  margin: auto;
+}
+
+/*# sourceMappingURL=customers.css.map */
