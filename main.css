@@ -1,10 +1,10 @@
 #product-overview {
   position: relative;
-  background: url("photo/freedom.jpg") left 10% bottom 20%/cover no-repeat border-box;
-  width: 100%;
-  height: 528px;
-  margin-top: 42px;
-  padding: 10px;
+  background: url("photo/freedom.jpg") left 10% bottom 60%/cover no-repeat border-box;
+  width: 100vw;
+  height: 33vh;
+  margin-top: 2.625rem;
+  padding: 0.625rem;
 }
 #product-overview h1 {
   position: absolute;
@@ -26,8 +26,8 @@
 #plans .plan {
   background: #d5ffdc;
   text-align: center;
-  padding: 16px;
-  margin: 8px;
+  padding: 1rem;
+  margin: 0.5rem;
   display: inline-block;
   width: 30%;
   vertical-align: middle;
@@ -44,7 +44,7 @@
   padding: 0;
 }
 #plans .plan .plan__features .plan__feature {
-  margin: 8px 0;
+  margin: 0.5rem 0;
 }
 #plans .plan.plan--highlighted {
   background: #19b84c;
@@ -54,9 +54,9 @@
 #plans .plan.plan--highlighted .plan__annotation {
   background: white;
   color: #19b84c;
-  padding: 8px;
+  padding: 0.5rem;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
 #plans .plan.plan--highlighted .plan__title {
   color: white;
@@ -67,8 +67,8 @@
 
 #key-features {
   background: #ff004c;
-  padding: 16px;
-  margin-top: 48px;
+  padding: 1rem;
+  margin-top: 3rem;
 }
 #key-features .key-features__title {
   color: white;
@@ -86,19 +86,60 @@
   vertical-align: top;
 }
 #key-features .key-features__list .key-feature .key-feature__image {
-  width: 128px;
-  height: 128px;
+  width: 8rem;
+  height: 8rem;
   background: #ffcede;
   border: 2px solid #424242;
   border-radius: 50%;
   margin: auto;
-  padding: 20px;
+  padding: 1.25rem;
 }
 #key-features .key-features__list .key-feature .key-feature__description {
   text-align: center;
   font-weight: bold;
   color: white;
-  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+.modal {
+  position: fixed;
+  display: none;
+  z-index: 200;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.modal .modal__title {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+.modal .modal__actions {
+  text-align: center;
+}
+.modal .modal__actions .modal__action {
+  border: 1px solid #0e4f1f;
+  background: #0e4f1f;
+  text-decoration: none;
+  color: white;
+  font: inherit;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.modal .modal__actions .modal__action:hover, .modal .modal__actions .modal__action:active {
+  background: #2ddf5c;
+  border-color: #2ddf5c;
+}
+.modal .modal__actions .modal__action--negative {
+  background: red;
+  border-color: red;
+}
+.modal .modal__actions .modal__action--negative:hover, .modal .modal__actions .modal__action--negative:active {
+  background: #ff5454;
+  border-color: #ff5454;
 }
 
 /*# sourceMappingURL=main.css.map */
