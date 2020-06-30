@@ -17,7 +17,6 @@ for (let i=0; i<selectPlanButtons.length; i++) {
 
 // Button toggle
 toggleButton.addEventListener('click', () => {
-    console.log(111111);
     // backdrop.style.display = 'block';
     // mobileNav.style.display = 'block';
     backdrop.classList.add('open');

@@ -7,7 +7,7 @@
 }
 
 .main-packages {
-  padding-top: 2.1rem;
+  padding-top: 3.5rem;
 
   .package {
     border: 4px solid #0e4f1f;
@@ -88,5 +88,13 @@
 
   .clearfix {
     clear: both;
+  }
+}
+
+@media (min-width: 40rem) {
+  main {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

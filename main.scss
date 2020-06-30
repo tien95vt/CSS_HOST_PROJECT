@@ -1,6 +1,8 @@
 #product-overview {
   position: relative;
-  background: url("photo/freedom.jpg") left 10% bottom 60%/cover no-repeat border-box;
+  background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
+    url("photo/freedom.jpg") center/cover no-repeat border-box,
+    #ff1b68;
   //background-image: url("photo/freedom.jpg");
   //background-size: cover;
   //background-position: left 10% bottom 20%;
@@ -9,25 +11,21 @@
   //background-clip: border-box;
   width: 100vw;
   height: 33vh;
-  margin-top: 2.625rem;
+  //margin-top: 2.625rem;
   padding: 0.625rem;
 
-  h1 {
+  .product-overview__text {
     position: absolute;
     color: white;
     font-family: 'Anton', sans-serif;
     bottom: 5%;
     left: 3%;
+    font-size: 1.6rem;
   }
 
 }
 
 #plans {
-  .plan__list {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-  }
 
   .section-title {
     color: #2ddf5c;
@@ -38,20 +36,19 @@
     background: #d5ffdc;
     text-align: center;
     padding: 1rem;
-    margin: 0.5rem;
-    display: inline-block;
-    width: 30%;
-    vertical-align: middle;
+    margin: 0.5rem 0;
+    display: block;
+    width: 100%;
 
-    .plan__title {
+    &__title {
       color: #0e4f1f;
     }
 
-    .plan__price {
+    &__price {
       color: #858585;
     }
 
-    .plan__features {
+    &__features {
       list-style: none;
       margin: 0;
       padding: 0;
@@ -64,7 +61,6 @@
     &.plan--highlighted {
       background: #19b84c;
       color: white;
-      box-shadow: 2px 2px 2px 2px rgba(0 ,0, 0, 0.5);
 
       .plan__annotation {
         background: white;
@@ -102,9 +98,6 @@
     text-align: center;
 
     .key-feature {
-      width: 30%;
-      display: inline-block;
-      vertical-align: top;
 
       .key-feature__image {
         width: 8rem;
@@ -169,6 +162,57 @@
         background: #ff5454;
         border-color: #ff5454;
       }
+    }
+  }
+}
+
+@media (min-width: 40rem) {
+  #product-overview {
+    height: 40vh;
+    background-position: 50% 25%;
+    margin-top: 3.5rem;
+
+    .product-overview__text {
+      font-size: 3rem;
+    }
+  }
+
+
+  // new
+  #plans {
+    .plan__list {
+      width: 100%;
+      text-align: center;
+    }
+
+    .plan {
+      width: 30%;
+      display: inline-block;
+      vertical-align: middle;
+      min-width: 13rem;
+      max-width: 25rem;
+    }
+
+    .plan--highlighted {
+      box-shadow: 2px 2px 2px 2px rgba(0 ,0, 0, 0.5);
+    }
+  }
+
+  .key-feature {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    max-width: 25rem;
+  }
+}
+
+@media (min-width: 60rem) {
+  #product-overview {
+    height: 50vh;
+    background-position: 50% 25%;
+
+    .product-overview__text {
+      font-size: 5rem;
     }
   }
 }
